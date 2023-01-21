@@ -324,9 +324,9 @@ static int schedule_process(struct schedproc * rmp, unsigned flags)
 		printf("PM: An error occurred when trying to schedule %d: %d\n",
 		rmp->endpoint, err);
 	}
-    if (rmp->priority >= USER_Q){
-    printf("PID %d swapped in\n", _ENDPOINT_P(rmp->endpoint));
-    }
+        if (rmp->priority >= USER_Q){
+        printf("PID %d swapped in\n", _ENDPOINT_P(rmp->endpoint));
+        }
 
 
 	return err;
